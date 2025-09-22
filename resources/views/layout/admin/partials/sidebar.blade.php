@@ -58,9 +58,10 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="admin-nav-item" data-section="settings">
+                        <a href="{{route('school-details')}}" class="admin-nav-item" data-section="settings">
                             <i class="fas fa-cog w-6"></i>
                             <span class="sidebar-text">Settings</span>
+                       
                         </a>
                     </li>
                 </ul>
