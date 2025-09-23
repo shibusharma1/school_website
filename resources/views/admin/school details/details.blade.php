@@ -1,5 +1,7 @@
 @extends('layout.admin.app')
+@section('page-heading', 'Setting')
 @section('contents')
+
 
  <style>
         /* Reset styles */

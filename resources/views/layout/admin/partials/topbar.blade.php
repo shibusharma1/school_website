@@ -2,7 +2,7 @@
             <header class="bg-white shadow-sm">
                 <div class="flex justify-between items-center p-4">
                     <div>
-                        <h2 class="text-xl font-semibold" id="adminSectionTitle">Dashboard</h2>
+                        <h2 class="text-xl font-semibold" id="adminSectionTitle">@yield('page-heading')</h2>
                     </div>
                     <div class="flex items-center space-x-4">
                         <div class="relative">

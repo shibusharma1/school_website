@@ -166,38 +166,33 @@
             });
             
             // Navigation functionality
-            const navItems = document.querySelectorAll('.admin-nav-item');
-            const sections = document.querySelectorAll('.admin-section');
-            const sectionTitle = document.getElementById('adminSectionTitle');
+            // const navItems = document.querySelectorAll('.admin-nav-item');
+            // const sections = document.querySelectorAll('.admin-section');
+            // const sectionTitle = document.getElementById('adminSectionTitle');
             
-            navItems.forEach(item => {
-                item.addEventListener('click', function(e) {
-                    e.preventDefault();
+            // navItems.forEach(item => {
+            //     item.addEventListener('click', function(e) {
+            //         e.preventDefault();
                     
-                    // Remove active class from all items
-                    navItems.forEach(navItem => {
-                        navItem.classList.remove('active');
-                    });
+            //         navItems.forEach(navItem => {
+            //             navItem.classList.remove('active');
+            //         });
                     
-                    // Add active class to clicked item
-                    this.classList.add('active');
+            //         this.classList.add('active');
                     
-                    // Hide all sections
-                    sections.forEach(section => {
-                        section.classList.add('hidden');
-                        section.classList.remove('active');
-                    });
+            //         sections.forEach(section => {
+            //             section.classList.add('hidden');
+            //             section.classList.remove('active');
+            //         });
                     
-                    // Show the selected section
-                    const sectionId = this.getAttribute('data-section');
-                    const targetSection = document.getElementById(sectionId);
-                    targetSection.classList.remove('hidden');
-                    targetSection.classList.add('active');
+            //         const sectionId = this.getAttribute('data-section');
+            //         const targetSection = document.getElementById(sectionId);
+            //         targetSection.classList.remove('hidden');
+            //         targetSection.classList.add('active');
                     
-                    // Update section title
-                    sectionTitle.textContent = this.querySelector('.sidebar-text').textContent || this.querySelector('i').className.replace(/fas fa-/g, '').replace(/-/g, ' ');
-                });
-            });
+            //         sectionTitle.textContent = this.querySelector('.sidebar-text').textContent || this.querySelector('i').className.replace(/fas fa-/g, '').replace(/-/g, ' ');
+            //     });
+            // });
             
             // Logout functionality
             const logoutBtn = document.getElementById('logoutBtn');

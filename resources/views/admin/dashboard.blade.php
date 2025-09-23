@@ -1,4 +1,5 @@
 @extends('layout.admin.app')
+@section('page-heading', 'Dashboard')
 
 @section( 'contents')
             <!-- Dashboard Section -->
